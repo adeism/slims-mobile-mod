@@ -82,7 +82,21 @@ Dengan perbaikan yang telah diterapkan, tata letak bagian "Koleksi Populer" di l
 
 ### Detail Teknis (Untuk yang Ingin Tahu)
 
-Perubahan ini dilakukan pada file JavaScript yang mengelola komponen tampilan koleksi di template default:
+Perubahan ini dilakukan pada file JavaScript yang mengelola komponen tampilan koleksi di template default SLiMS 9 Bulian:
+
+```
+    render: function (createElement) {
+        return createElement('div', {
+            attrs: {
+                // --- PERUBAHAN DI SINI ---
+                // Hapus 'w-48', ganti dengan kelas lebar responsif
+                // w-1/2 untuk mobile (2 kolom)
+                // md:w-1/5 untuk medium ke atas (5 kolom, sesuaikan jika perlu)
+                class: 'w-1/2 md:w-1/5 pr-4 pb-4'
+                // --- AKHIR PERUBAHAN ---
+            }
+        }
+```
 
 *   **File:** `template/default/assets/js/app.js`
 *   **Komponen Vue.js:** `slims-book`
