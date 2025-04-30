@@ -1,6 +1,6 @@
 
 
-## Tutorial: Perbaikan Tata Letak Mobile untuk Koleksi Populer di Template Default SLiMS
+## Tutorial: Perbaikan Tata Letak Mobile untuk Koleksi Populer di Template Default SLiMS 9 Bulian
 
 **Target:** Pengguna SLiMS (Pustakawan, Administrator) yang menggunakan template OPAC default (Classic).
 
